@@ -12,6 +12,8 @@ jobs:
         with:
           node-version: 16.x     
 
+      - name: CI
+        run: npm ci
       - name: Build 
         run: npm run build
       - name: Export
