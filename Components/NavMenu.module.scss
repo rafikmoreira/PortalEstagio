@@ -1,0 +1,10 @@
+.mainMenu {
+    background-color: #36702A;
+}
+
+.btnEntrar {
+    color: yellow;
+    &:hover {
+        color: #ececa1;
+    }
+}

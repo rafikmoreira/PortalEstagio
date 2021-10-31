@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Poppins, serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +13,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+main section {
+  padding-top: 30px;
+  &:first-of-type {
+    padding-top: 88px;
+  }
 }
