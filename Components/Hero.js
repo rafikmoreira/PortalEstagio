@@ -15,7 +15,7 @@ const Hero = () => (
                     </div>
                     <div className="row mt-5">
                         <div className="col">
-                            <a href="/passo-a-passo" className={`btn-light ${styles.btnIniciarEstaio}`}>Iniciar Estágio</a>
+                            <a href="/passo-a-passo" className={`btn-light btnCustomizado`}>Iniciar Estágio</a>
                         </div>
                     </div>
                 </div>

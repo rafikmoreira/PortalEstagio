@@ -30,7 +30,7 @@ const NavMenu = () => {
                         <NavLink href={"/documentos"} active={router.pathname=== "/documentos"}>Documentos</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>Convênios</NavLink>
+                        <NavLink href={"/convenios"} active={router.pathname=== "/convenios"}>Convênios</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href={"/cursos"} active={router.pathname=== "/cursos"}>Cursos</NavLink>
