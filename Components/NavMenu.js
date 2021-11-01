@@ -32,6 +32,9 @@ const NavMenu = () => {
                     <NavItem>
                         <NavLink>Convênios</NavLink>
                     </NavItem>
+                    <NavItem>
+                        <NavLink href={"/cursos"} active={router.pathname=== "/cursos"}>Cursos</NavLink>
+                    </NavItem>
                 </Nav>
             </Collapse>
             {/*<NavbarText>*/}
