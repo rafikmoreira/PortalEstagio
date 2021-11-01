@@ -7,7 +7,7 @@ const ExibirDocumento = () => {
     const [domain, setDomain] = useState(null)
 
     useEffect(() => {
-        setDomain(window.location.hostname+":"+ (window.location.port||80))
+        setDomain(window.location.hostname+ (window.location.port?":" +window.location.port:""))
     },[])
 
 
