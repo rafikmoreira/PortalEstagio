@@ -1,6 +1,17 @@
 import styles from './NavMenu.module.scss'
 import { useRouter } from "next/router";
-import {Collapse, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink} from "reactstrap";
+import {
+    Collapse,
+    DropdownItem, DropdownMenu, DropdownToggle,
+    Nav,
+    Navbar,
+    NavbarBrand,
+    NavbarText,
+    NavbarToggler,
+    NavItem,
+    NavLink, UncontrolledDropdown
+} from "reactstrap";
+import Link from "next/link";
 import {useState} from "react";
 
 const NavMenu = () => {
@@ -32,9 +43,19 @@ const NavMenu = () => {
                     <NavItem>
                         <NavLink href={"/convenios"} active={router.pathname=== "/convenios"}>Convênios</NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink href={"/cursos"} active={router.pathname=== "/cursos"}>Cursos</NavLink>
-                    </NavItem>
+                    <UncontrolledDropdown inNavbar nav>
+                        <DropdownToggle caret nav>
+                            Mais
+                        </DropdownToggle>
+                        <DropdownMenu dark>
+                            <DropdownItem>
+                                <Link href={"/aproveitamento-profissional"}>Aproveitamento Profissional</Link>
+                            </DropdownItem>
+                            <DropdownItem>
+                                <Link href={"/cursos"}>Cursos</Link>
+                            </DropdownItem>
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
                 </Nav>
             </Collapse>
             {/*<NavbarText>*/}
