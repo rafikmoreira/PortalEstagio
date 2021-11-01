@@ -1,17 +1,24 @@
 import styles from './exibir-documento.module.scss'
+import { useRouter } from "next/router";
+import {useEffect, useState} from "react";
 
 const ExibirDocumento = () => {
-    return <section>
-        <iframe
-            className={styles.documento}
-            frameBorder={0}
-            src="https://drive.google.com/file/d/13eOQGDUOwLtbcI-W8olp5wmF53wO041H/preview"
-            width="100%"
-            allow="autoplay">
-        </iframe>
-        {/*<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://localhost:3000/documentos/regulamento_de_estágio.pdf" width="500" height="375"/>*/}
+    const router = useRouter();
+    const [domain, setDomain] = useState(null)
 
-        {/*<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=documentos/regulamento_de_estágio.pdf" width="100%" style={{"height":"100vh"}}/>*/}
+    useEffect(() => {
+        setDomain(window.location.hostname+":"+ (window.location.port||80))
+    },[])
+
+
+    return <section>
+        {domain ?
+            <embed
+                className={styles.documento}
+                src={`https://drive.google.com/viewerng/viewer?embedded=true&url=https://${domain}/documentos/${router.query.doc}`}
+                width="500" height="375"
+            /> : <></>
+        }
     </section>
 }
 
