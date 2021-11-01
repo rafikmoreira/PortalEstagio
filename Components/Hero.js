@@ -7,13 +7,15 @@ const Hero = () => (
                 <div className="col-md-8">
                     <div className="row">
                         <div className="col">
-                            <span className={styles.title}>Lorem ipsum dolor sit amet</span><br/>
-                            <span className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla.</span>
+                            <span className={styles.title}>Portal do estagiário - IFNGM - Almenara</span><br/>
+                            <span className={styles.subtitle}>
+                                Navegue pelo nosso site, tire suas dúvidas e compreenda o processo para realização do seu estágio.
+                            </span>
                         </div>
                     </div>
                     <div className="row mt-5">
                         <div className="col">
-                            <button href="#" className={styles.btnIniciarEstaio}>Iniciar Estágio</button>
+                            <a href="/passo-a-passo" className={`btn-light ${styles.btnIniciarEstaio}`}>Iniciar Estágio</a>
                         </div>
                     </div>
                 </div>

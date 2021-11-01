@@ -1,6 +1,7 @@
 import Documento from "../Components/Documento";
+import documentos from "../data/documentos.json"
 
-export default function Documentos(){
+function Documentos({documentos}){
     return <>
         <section className="container">
             <div className="row">
@@ -19,135 +20,39 @@ export default function Documentos(){
             </div>
         </section>
 
-        <section className="container">
-            <div className="row">
-                <div className="col-12">
-                        <h1 className="mt-3 pb-3">Antes de Começar o Estágio</h1>
-                </div>
-            </div>
-            <div className="row">
-                <Documento
-                    titulo={"Ficha de Mátricula"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Termo de Convênio"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec pulvinar mi vitae
-                        metus tempor, vitae commodo mi sodales. Sed nec libero
-                    </>}
-                />
-                <Documento
-                    titulo={"Ficha de Cadastro de Profissional Liberal"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Termo de Compromisso"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Plano de Estágio"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-
-            </div>
-
-        </section>
-
-        <section className="container">
-            <div className="row">
-                <div className="col-12">
-                    <h1 className="mt-3 pb-3">Durante o Estágio</h1>
-                </div>
-            </div>
-            <div className="row">
-                <Documento
-                    titulo={"Folha de Frequência"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Formulário de Troca de Supervisor"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec pulvinar mi vitae
-                        metus tempor, vitae commodo mi sodales. Sed nec libero
-                    </>}
-                />
-            </div>
-
-        </section>
-
-        <section className="container">
-            <div className="row">
-                <div className="col-12">
-                    <h1 className="mt-3 pb-3">Para finalizar o estágio</h1>
-                </div>
-            </div>
-            <div className="row">
-                <Documento
-                    titulo={"Avaliação do Estágio (feita pela Entidade Concedente)"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Avaliação do Estágio (feita pelo Estagiário)"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec pulvinar mi vitae
-                        metus tempor, vitae commodo mi sodales. Sed nec libero
-                    </>}
-                />
-                <Documento
-                    titulo={"Relatório final"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-            </div>
-        </section>
-
-        <section className="container">
-            <div className="row">
-                <div className="col-12">
-                    <h1 className="mt-3 pb-3">Outros Documentos</h1>
-                </div>
-            </div>
-            <div className="row">
-                <Documento
-                    titulo={"Formulário de Convalidação de Atividade Profissional"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec
-                    </>}
-                />
-                <Documento
-                    titulo={"Formulário de Convalidação de Horas de Ensino/Pesquisa/Extensão"}
-                    descricao={<>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus.
-                        Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec pulvinar mi vitae
-                        metus tempor, vitae commodo mi sodales. Sed nec libero
-                    </>}
-                />
-            </div>
-        </section>
+        {
+            Object.keys(documentos).map(key => {
+                const categoria = documentos[key];
+                return (
+                    <section className="container" key={key}>
+                        <div className="row">
+                            <div className="col-12">
+                                <h1 className="mt-3 pb-3">{categoria.rotulo}</h1>
+                            </div>
+                            <div className="row">
+                                {
+                                    categoria.documentos.map((documento, index) => (
+                                        <Documento key={documento.key}
+                                            titulo={documento.titulo}
+                                            descricao={documento.descricao}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </section>
+                )
+            })
+        }
     </>
 }
+
+export async function getStaticProps(context) {
+    return {
+        props: {
+            documentos
+        },
+    }
+}
+
+export default Documentos

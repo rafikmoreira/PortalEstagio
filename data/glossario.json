@@ -1,0 +1,16 @@
+{
+  "professor orientador": {
+    "descricao": "Professor resposável por te orientar durante o período do seu estágio. O seu orientador pode te ajudar no preenchimento e entrega dos documentos,\nesclarecer dúvidas e temas relacionadas ao estágio, avaliar relatórios, emitir pareceres, entre outras atribuições.",
+    "externo": {
+      "titulo": "Regulamento de Estágio",
+      "link": "exibir-documento?noFooter&doc=regulamento_de_estágio.pdf"
+    }
+  },
+  "instituições convêniadas": {
+    "descricao": "Instituição apta a receber estágiários",
+    "externo": {
+      "titulo": "Convênios",
+      "link": "convenios"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "iniciais": {
+    "rotulo": "Antes de começar o estágio",
+    "documentos": [
+      {
+        "key": "ficha-matricula",
+        "titulo": "Ficha de Matrícula",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "termo-convenio",
+        "titulo": "Termo de Convênio",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "cadatro-profissional-liberal",
+        "titulo": "Ficha de Cadastro de Profissional Liberal",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "carta-apresentacao",
+        "titulo": "Carta de Apresentação",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "termo-compromisso",
+        "titulo": "Termo de Compromisso",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "plano-estagio",
+        "titulo": "Plano de Estágio",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      }
+    ]
+  },
+  "durante": {
+    "rotulo": "Durante o estágio",
+    "documentos": [
+      {
+        "key": "folha-frequencia",
+        "titulo": "Folha de Frequência",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "troca-supervisor",
+        "titulo": "Formulário de Troca de Supervisor",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      }
+    ]
+  },
+  "finais": {
+    "rotulo": "Para finalizar o estágio",
+    "documentos": [
+      {
+        "key": "avaliacao-estagio-concedente",
+        "titulo": "Avaliação do Estágio (feita pela Entidade Concedente)",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "avaliacao-estagio-estudante",
+        "titulo": "Avaliação do Estágio (feita pelo Estudante)",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "relatorio-final",
+        "titulo": "Relatório final",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      }
+    ]
+  },
+  "outros": {
+    "rotulo": "Antes de Começar o Estágio",
+    "documentos": [
+      {
+        "key": "aproveitamento-profissional",
+        "titulo": "Requerimento de Aproveitamento de Atividade Profissional",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      },
+      {
+        "key": "convalidacao-ensino-pesquisa-extensao",
+        "titulo": "Formulário de Convalidação de Horas de Ensino/Pesquisa/Extensão",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate lectus. Cras eu congue nisi. Aenean maximus ut risus ut dignissim. Donec"
+      }
+    ]
+  }
+}

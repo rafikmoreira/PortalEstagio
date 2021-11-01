@@ -6,7 +6,7 @@ const Footer = ()=> (
             <div className="row">
                 <div className="col">
         <span>Rodovia BR 367 Almenara/Jequitinhonha, km 111, Zona Rural, Almenara - MG - CEP:39900-000 <br/>
-            Fone: (038) 3218-7385 - Email: Estagio.almenara@ifnmg.edu.br</span>
+            Fone: (038) 3218-7385 - Email: <a href={"mailto:estagio.almenara@ifnmg.edu.br"}>estagio.almenara@ifnmg.edu.br</a></span>
                 </div>
             </div>
         </div>

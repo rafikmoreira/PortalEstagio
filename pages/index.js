@@ -55,7 +55,7 @@ const Home = () => (
                     </ul>
                 </div>
                 <div className="col-md-4">
-                    <img src="images/o_estagio.svg"/>
+                    <img className={"img-fluid"} src="images/o_estagio.svg"/>
                 </div>
             </div>
         </section>
@@ -63,7 +63,7 @@ const Home = () => (
         <section className="container">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="images/perguntas.svg"/>
+                    <img className={"img-fluid"} src="images/perguntas.svg"/>
                 </div>
                 <div className="col-md-8">
                     <h1 className="mt-3">Perguntas Frequentes</h1>
