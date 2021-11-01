@@ -18,7 +18,7 @@ const Glossario = ({children}) => {
                     <div dangerouslySetInnerHTML={ {__html: signifiado?.descricao || children} } />
                     {
                         signifiado?.externo ?
-                            <a target={"_blank"}  rel="noreferrer" href={signifiado.externo.link}><i className="fas fa-external-link-alt"></i> {signifiado.externo.titulo}</a> : <></>
+                            <a target={"_blank"}  rel="noreferrer" href={signifiado.externo.link}><i className="fas fa-external-link-alt"/> {signifiado.externo.titulo}</a> : <></>
                     }
                 </PopoverBody>
             </UncontrolledPopover>

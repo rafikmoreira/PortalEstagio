@@ -10,7 +10,6 @@ const ExibirDocumento = () => {
         setDomain(window.location.hostname+ (window.location.port?":" +window.location.port:""))
     },[])
 
-
     return <section>
         {domain ?
             <embed
