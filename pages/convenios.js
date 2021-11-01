@@ -17,7 +17,7 @@ const Convenios = () => (
                 </div>
                 <div className="row">
                     <div className="col-12 text-center">
-                        <a href="/" className={`btn-light btnCustomizado`}>Seja um parceiro</a>
+                        <a href="" className={`btn-light btnCustomizado`}>Seja um parceiro</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import styles from './Hero.module.scss'
+import Link from "next/link";
 
 const Hero = () => (
     <div className={styles.hero}>
@@ -15,7 +16,7 @@ const Hero = () => (
                     </div>
                     <div className="row mt-5">
                         <div className="col">
-                            <a href="/passo-a-passo" className={`btn-light btnCustomizado`}>Iniciar Estágio</a>
+                            <Link href={"/passo-a-passo"}><a  className={`btn-light btnCustomizado`}>Iniciar Estágio</a></Link>
                         </div>
                     </div>
                 </div>
