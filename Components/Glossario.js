@@ -2,6 +2,7 @@ import glossario from "../data/glossario.json";
 
 import {PopoverBody, UncontrolledPopover} from "reactstrap";
 import {useRef} from 'react'
+import Link from "next/link";
 const Glossario = ({children}) => {
 
     const signifiado = glossario[children];
@@ -18,7 +19,9 @@ const Glossario = ({children}) => {
                     <div dangerouslySetInnerHTML={ {__html: signifiado?.descricao || children} } />
                     {
                         signifiado?.externo ?
-                            <a target={"_blank"}  rel="noreferrer" href={signifiado.externo.link}><i className="fas fa-external-link-alt"/> {signifiado.externo.titulo}</a> : <></>
+                            <Link href={signifiado.externo.link}>
+                                <a rel="noreferrer" ><i className="fas fa-external-link-alt"/> {signifiado.externo.titulo}</a></Link> : <></>
+
                     }
                 </PopoverBody>
             </UncontrolledPopover>
